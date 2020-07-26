@@ -1,0 +1,2 @@
+docker run --rm singlefile --back-end=webdriver-chromium  --browser-args="[\"--no-sandbox\"]" "https://www.heise.de"
+

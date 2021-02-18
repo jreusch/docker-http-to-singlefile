@@ -11,8 +11,8 @@ RUN ./install-geckodriver.sh
 WORKDIR /app
 
 # lets make the head commit sticky, just to have a stable image.
-# current HEAD of master as of 26.7.2020
-ENV COMMIT 9d30f296f66bdc8278a6d4f2c4cf951a8ea7c5ce
+# current HEAD of master as of 18.2.2021
+ENV COMMIT c7e25cf742809e133759afe043e59b8b8617eb9b
 RUN git init && \
     git remote add origin  https://github.com/gildas-lormeau/SingleFile.git && \
     git fetch --depth 1 origin ${COMMIT} && \
